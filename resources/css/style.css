@@ -1,18 +1,8 @@
-/* ---------------------------------------------- */
-/*            CODE EXPLAINED TUTORIALS            */
-/*         www.youtube.com/CodeExplained          */
-/* ---------------------------------------------- */
-
-/* ---------------------------------------------- */
-/*                  LOAD FONTS                    */
-/* ---------------------------------------------- */
 @font-face{
     font-family: 'Gilroy';
     src: url(./Gilroy-Regular.woff) format(woff);
 }
-/* ---------------------------------------------- */
-/*                    GENERAL                     */
-/* ---------------------------------------------- */
+
 *{
     padding: 0;
     margin: 0;
@@ -36,9 +26,7 @@ html{
         opacity: 1;
     }
 }
-/* ---------------------------------------------- */
-/*                    HEADER                      */
-/* ---------------------------------------------- */
+
 header{
     display: flex;
     align-items: center;
@@ -85,20 +73,18 @@ nav ul li a {
     color: #6a149b;
     padding: 10px;
 }
-/* ---------------------------------------------- */
-/*                      MAIN                      */
-/* ---------------------------------------------- */
+
 main{
     max-width: 1200px;
     margin: 0 auto;
 }
-/* -------- BG IMAGE -------- */
+
 .stats{
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('../img/bg.jpg');
     background-size: cover;
 }
-/* -------- LATEST REPORT -------- */
+
 .latest-report{
     display: flex;
     justify-content: space-between;
@@ -148,7 +134,7 @@ main{
 .new-value{
     font-size: 1.3em;
 }
-/* -------- CHART -------- */
+
 .chart{
     width: 80%;
     height: 70vh;
@@ -157,7 +143,7 @@ main{
     margin: 0 auto;
     padding: 50px 0;
 }
-/* -------- SEARCH COUNTRY -------- */
+
 .search-country{
     position: relative;
     top: 10px;
@@ -223,17 +209,17 @@ main{
 .country-list ul li:hover{
     border-left: 1px solid #FFF;
 }
-/* SCROLL BAR */
+
 .country-list::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
+
   .country-list::-webkit-scrollbar-track {
     background: #111;
   }
   
-  /* Handle */
+
   .country-list::-webkit-scrollbar-thumb {
     background: #F1F1F1;
   }
@@ -242,9 +228,7 @@ main{
   .country-list::-webkit-scrollbar-thumb:hover {
     background: #FFF;
   }
-/* ---------------------------------------------- */
-/*                    FOOTER                      */
-/* ---------------------------------------------- */
+
 footer{
     max-width: 1200px;
     height: 60px;
@@ -269,9 +253,7 @@ footer{
 .copyright p{
     color: #FFF;
 }
-/* ---------------------------------------------- */
-/*             SCREEN WIDTH < 600px               */
-/* ---------------------------------------------- */
+
 @media screen and (max-width: 600px){
     .latest-report{
         display: flex;
@@ -279,7 +261,7 @@ footer{
         align-items: flex-start;
     }
 }
-/* Dropdown Button */
+
 .dropbtn {
     background-color: #3498DB;
     color: white;
@@ -289,18 +271,18 @@ footer{
     cursor: pointer;
   }
   
-  /* Dropdown button on hover & focus */
+
   .dropbtn:hover, .dropbtn:focus {
     background-color: #2980B9;
   }
   
-  /* The container <div> - needed to position the dropdown content */
+
   .dropdown {
     position: relative;
     display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -310,7 +292,7 @@ footer{
     z-index: 1;
   }
   
-  /* Links inside the dropdown */
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -318,8 +300,8 @@ footer{
     display: block;
   }
   
-  /* Change color of dropdown links on hover */
+  
   .dropdown-content a:hover {background-color: #ddd}
   
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  
   .show {display:block;}
