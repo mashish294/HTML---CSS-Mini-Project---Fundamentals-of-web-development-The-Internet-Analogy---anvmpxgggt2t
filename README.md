@@ -59,6 +59,45 @@ This  is a Real Works of project - REAL TIME COVID TRACKER
 
   this link includes Covid 19 APIs
   here i am using 3 status (confirmed,recovered , deaths)
+  
+  ## Used APIs and  Database
+
+In this project i use  some data references from internet like:
+
+1) ipgeolocation APIs
+2) Loading APIs
+3) Covid-19 APIs
+4) Logo and Images
+5) Drop Down Button
+6) Map function 
+7) some styling and java scripting part.
+
+##  Features, Technical Things I Had Implemented
+
+first thing that i created a html template,
+after this i give a title for  project
+and then i created all sections of project,
+added images , logos , database , APIs, references etc. 
+write a code for map function.
+ 
+ also created a css file for styling , 
+ javascript file eg: App.js , Country.js
+ After project  i made Readme file. 
+  
+  ## project description
+
+This project is about to fetching  Covid 19 Real time data ,
+there i am using different type of data's ,
+this project made by using  HTML, CSS, JS.  files, in this project some content and help  are taken from internet,
+this project website is tracking real time covid cases data from across the world.
+
+## Reason Behind the project choosen
+
+This project is based on recent pandemic in the world , and this is a ongoing trending project for me,
+this is a real world based example for any project, 
+for me working on this project   is a great experince.
+
+and also this Project solves a problem for me for access the real time covid cases data.
 
 
 
