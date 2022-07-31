@@ -1,7 +1,7 @@
 # html-css-project-boilerplate
 <img src="icon.png" align="right" />
 
-# COVID TRACKER README [![COVID TRACKER](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
+# COVID TRACKER README FILE
 
 > List of All Used Links ,Files, Database,features, technical things Which Is implemented.
 
