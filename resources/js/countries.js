@@ -1,4 +1,3 @@
-// ALL COUNTRY NAMES WITH THEIR ISO CODE
 let country_list = [
     { name: 'USA', code: 'US' },
     { name: 'Spain', code: 'ES' },
@@ -205,14 +204,14 @@ let country_list = [
     { name: 'China', code: 'CN' }
 ];
 
-// SELECT SEARCH COUNTRY ELEMENTS
+
 const search_country_element = document.querySelector(".search-country");
 const country_list_element = document.querySelector(".country-list");
 const chang_country_btn = document.querySelector(".change-country");
 const close_list_btn = document.querySelector(".close");
 const input = document.getElementById('search-input')
 
-// CREATE TE COUNTRY LIST
+
 function createCountryList(){
     const num_countries = country_list.length;
 
@@ -236,7 +235,7 @@ function createCountryList(){
 let num_of_ul_lists = 3;
 createCountryList();
 
-// SHOW/HIDE THE COUTRY LIST ON CLICK EVENT
+
 chang_country_btn.addEventListener("click", function(){
     input.value = "";
     resetCountryList();
@@ -252,8 +251,7 @@ country_list_element.addEventListener("click", function(){
     search_country_element.classList.toggle("hide");
 });
 
-// COUNTRY FILTER
-/* input event fires up whenever the value of the input changes */
+
 input.addEventListener("input", function(){
     let value = input.value.toUpperCase();
 
@@ -266,7 +264,7 @@ input.addEventListener("input", function(){
     })
 })
 
-// RESET COUNTRY LIST (SHOW ALL THE COUNTRIES )
+
 function resetCountryList(){
     country_list.forEach( country => {
         document.getElementById(country.name).classList.remove("hide");
