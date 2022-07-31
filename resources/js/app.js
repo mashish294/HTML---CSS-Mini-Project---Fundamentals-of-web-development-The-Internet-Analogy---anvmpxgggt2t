@@ -1,9 +1,4 @@
-/* ---------------------------------------------- */
-/*            CODE EXPLAINED TUTORIALS            */
-/*         www.youtube.com/CodeExplained          */
-/* ---------------------------------------------- */
 
-// SELECT ALL ELEMENTS
 const country_name_element = document.querySelector(".country .name");
 const total_cases_element = document.querySelector(".total-cases .value");
 const new_cases_element = document.querySelector(".total-cases .new-value");
@@ -14,7 +9,7 @@ const new_deaths_element = document.querySelector(".deaths .new-value");
 
 const ctx = document.getElementById("axes_line_chart").getContext("2d");
 
-// APP VARIABLES
+
 let app_data = [],
   cases_list = [],
   recovered_list = [],
@@ -22,7 +17,7 @@ let app_data = [],
   deaths = [],
   formatedDates = [];
 
-// GET USERS COUNTRY CODE
+
 fetch("https://api.ipgeolocation.io/ipgeo?apiKey=14c7928d2aef416287e034ee91cd360d")
   .then((res) => {
     return res.json();
@@ -38,9 +33,7 @@ fetch("https://api.ipgeolocation.io/ipgeo?apiKey=14c7928d2aef416287e034ee91cd360
     fetchData(user_country);
   });
 
-/* ---------------------------------------------- */
-/*                     FETCH API                  */
-/* ---------------------------------------------- */
+
 function fetchData(country) {
   user_country = country;
   country_name_element.innerHTML = "Loading...";
@@ -103,7 +96,7 @@ function fetchData(country) {
   api_fetch(country);
 }
 
-// UPDATE UI FUNCTION
+
 function updateUI() {
   updateStats();
   axesLinearChart();
@@ -127,13 +120,13 @@ function updateStats() {
   deaths_element.innerHTML = total_deaths;
   new_deaths_element.innerHTML = `+${new_deaths_cases}`;
 
-  // format dates
+  
   dates.forEach((date) => {
     formatedDates.push(formatDate(date));
   });
 }
 
-// UPDATE CHART
+
 let my_chart;
 function axesLinearChart() {
   if (my_chart) {
@@ -178,7 +171,7 @@ function axesLinearChart() {
   });
 }
 
-// FORMAT DATES
+
 const monthsNames = [
   "Jan",
   "Feb",
@@ -200,13 +193,12 @@ function formatDate(dateString) {
   return `${date.getDate()} ${monthsNames[date.getMonth()]}`;
 }
 
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
+  
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
